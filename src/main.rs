@@ -1,3 +1,9 @@
+//connected library
+
 fn main() {
-    println!("Hello, world!");
+    //init secret_number
+    //cycle with guess the numbers
+        //init guss number
+        //hints
+        //loop exit and output
 }
