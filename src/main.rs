@@ -15,9 +15,11 @@ fn main() {
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read line");
-        
-        //convented guess
 
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
         println!("secrer number - {secret_number}, guess number - {guess")
         //hints
         //loop exit and output
