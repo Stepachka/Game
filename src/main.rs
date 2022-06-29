@@ -20,7 +20,6 @@ fn main() {
             Ok(num) => num,
             Err(_) => continue,
         };
-        println!("secrer number - {secret_number}, guess number - {guess")
         println!("You guessed: {guess}");
 
         match guess.cmp(&secret_number) {
