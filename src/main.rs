@@ -5,16 +5,18 @@ use std::cmp::Ordering;
 fn main() {
     println!("Guess the number!");
 
-    //init secret_number
-    let secret_number;
-    //input secret_number
-    
-    //cycle with guess the numbers
+    let secret_number = rand::thread_rng().gen_range(1..100);
+
     loop {
         println!("Please input your guess.");
 
-        let mut guess;
-        //input guss number
+        let mut guess = String::new();
+
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("Failed to read line");
+        
+        //convented guess
 
         println!("secrer number - {secret_number}, guess number - {guess")
         //hints
